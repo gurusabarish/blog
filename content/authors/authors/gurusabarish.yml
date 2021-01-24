@@ -1,0 +1,11 @@
+name: Gurusabarish
+bio: |
+  Hi, I'm Gurusabarish, a passionate web developer and ML engineer from India. I tend to make use of modern web technologies to build websites that looks great, feels fantastic, and functions correctly.
+
+avatar: ./avatars/gurusabarish.webp
+social:
+  - url: https://twitter.com/gurusabarishh
+  - url: https://github.com/gurusabarish
+  - url: https://instagram.com/gurusabarishh
+  - url: https://www.linkedin.com/in/gurusabarish
+featured: true

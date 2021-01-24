@@ -1,37 +1,49 @@
 module.exports = {
   siteMetadata: {
-    title: `Novela by Narative`,
-    name: `Narative`,
-    siteUrl: `https://novela.narative.co`,
-    description: `This is my description that will be used in the meta tags and important for search results`,
+    title: 'Gurusabarish Blog',
+    name: 'Gurusabarish',
+    siteUrl: 'https://gurusabarish.tech',
+    description: 'Hi, I am Gurusabarish, a passionate web developer and ML engineer from India. I tend to make use of modern web technologies to build websites that looks great, feels fantastic, and functions correctly.',
     hero: {
-      heading: `Welcome to Novela, the simplest way to start publishing with Gatsby.`,
+      heading: 'Hey! Thanks for reading', 
       maxWidth: 652,
     },
     social: [
       {
-        name: `twitter`,
-        url: `https://twitter.com/narative`,
+        name: 'twitter',
+        url: 'https://twitter.com/gurusabarishh',
       },
       {
-        name: `github`,
-        url: `https://github.com/narative`,
+        name: 'github',
+        url: 'https://github.com/gurusabarish',
       },
       {
-        name: `instagram`,
-        url: `https://instagram.com/narative.co`,
+        name: 'instagram',
+        url: 'https://instagram.com/gurusabarishh',
       },
       {
-        name: `linkedin`,
-        url: `https://www.linkedin.com/company/narative/`,
-      },
-      {
-        name: `dribbble`,
-        url: `https://dribbble.com/narativestudio`,
+        name: 'linkedin',
+        url: 'https://www.linkedin.com/in/gurusabarish',
       },
     ],
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-167646412-7",
+        head: true,
+        anonymize: true,
+      },
+    },
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        sitemap: 'https://gurusabarish.tech/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    },
     {
       resolve: "@narative/gatsby-theme-novela",
       options: {
