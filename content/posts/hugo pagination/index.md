@@ -61,5 +61,3 @@ If you want to add pagination, you should change the code as below and **add Pag
 {{ template "_internal/pagination.html" . }}
 
 ```
-
-------------------------------------------------
