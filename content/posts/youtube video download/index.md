@@ -33,7 +33,7 @@ Note: *If it doesn't work then, uninstall the pytube library and reinstall. It w
 
 import pytube
 
-url = 'https://www.youtube.com/watch?v=PrOhbi1S5Gk'
+url = 'https://www.youtube.com/watch?v=ID8MoC34SFA'
 
 youtube = pytube.YouTube(url)
 video = youtube.streams.first()
@@ -50,8 +50,8 @@ Here, the only different is "we are getting the youtube videos link in list form
 import pytube  
   
 link=[
-  "https://www.youtube.com/watch?v=PrOhbi1S5Gk",  
-  "https://www.youtube.com/watch?v=jogBwxgYJeQ"
+  "https://www.youtube.com/watch?v=ID8MoC34SFA",  
+  "https://www.youtube.com/watch?v=VzuBJTtwm3o"
     ]
   
 for i in link:
@@ -69,7 +69,7 @@ Here, we are using the Playlist feature or function to download the youtube play
 
 ```python
 from pytube import Playlist
-pl = Playlist("https://www.youtube.com/watch?v=PrOhbi1S5Gk&list=PL9hVeDXtAgBYFcZvC3QdV5ZSVS4KL3M1J")
+pl = Playlist("https://www.youtube.com/watch?v=-otyb0ngsa4&list=PL0lo9MOBetEFCNnxB1uZcDGcrPO1Jbpz8")
 for video in pl.videos:
   video.streams.first().download()
 ```
@@ -82,7 +82,7 @@ It will the audio file in mp4 format. Don't worry this mp4 file also support for
 
 import pytube
 
-url = 'https://www.youtube.com/watch?v=PrOhbi1S5Gk'
+url = 'https://www.youtube.com/watch?v=VzuBJTtwm3o'
 
 youtube = pytube.YouTube(url)
 video = youtube.streams.filter(only_audio=True).all()

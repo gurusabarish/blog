@@ -76,6 +76,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://gurusabarish.tech`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-netlify-cms`,
       options: {
       },
